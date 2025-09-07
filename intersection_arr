@@ -1,0 +1,44 @@
+// brute force method.
+
+#include<iostream>
+using namespace std;
+int main(){
+int arr1[7]={1,2,7,2,9,3,5};
+int arr2[7]={11,23,33,84,15,36,77};
+cout<<"The intersectig elements are:";
+for(int i=0;i<7;i++){
+    for(int j=0;j<7;j++){
+        if(arr1[i] == arr2[j]){
+            cout<< arr1[i]<<" ";
+            arr2[j] = -11123464;
+            break;
+        }
+    }
+}
+return 0;
+}
+
+
+//two pointer method.
+
+#include<iostream>
+using namespace std;
+int main(){
+   int i=0,j=0;
+   int arr1[6]={1,2,2,2,3,4};
+   int arr2[4]={2,2,3,4};
+   while(i<6 && j<4){
+    if(arr1[i] == arr2[j]){
+        cout<<arr1[i]<<" ";
+        i++;
+        j++;
+    }
+    else if(arr1[i]<arr2[j]){
+        i++;
+    }
+    else if(arr1[i]>arr2[j]){
+        j++;
+    }
+   }
+    return 0;
+}

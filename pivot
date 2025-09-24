@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+
+int pivot(int arr[],int size){
+    int s=0;
+    int e=size-1;
+    int mid;
+    while(s<e){
+        mid=(s+e)/2;
+        if(arr[mid]>=arr[0]){
+            s=mid+1;
+        }
+        else{
+            e=mid;
+        }
+    }
+    return s;
+}
+int main(){
+    int sam[7]={3,7,9,15,34,45,2};
+    cout<<"pivot element is:"<<pivot(sam,7);
+    return 0;
+}

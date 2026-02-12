@@ -1,0 +1,123 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+
+    //  BINARY OPERATOR
+
+    int a=4;
+    int b=5;
+    cout<<"a&b: "<<(a&b)<<endl;
+    cout<<"a|b: " <<(a|b)<<endl;
+    cout<<"~a: " <<(~a)<<endl;
+    cout<<"a^b: " <<(a^b)<<endl;
+    cout<<(a<<2)<<endl; // right shift
+    cout<<(b>>2); // left shift
+   
+    // increment and decrement operator
+
+    int i=7;
+    cout<< ++i <<endl;
+    cout<< i++ <<endl;
+    cout<< i-- <<endl;
+    cout<< --i <<endl;
+
+    // sun of n natural no.'s
+
+    int n;
+    cin>>n;
+    int sum=0;
+    for(int i=1;i<=n;i++){
+        sum += i;
+    }
+    cout<<sum;
+
+    // fibonacci series
+
+    int a=0;
+    int b=1;
+    int n;
+    cout<<"Enter the value of n:";
+    cin>>n;
+    for(int i=1;i<=n;i++){
+        int sum = a+b;
+        cout<<sum<<endl;
+        a=b;
+        b=sum;
+    }
+
+   // prime number find
+
+    int n;
+    cout<<"Enter the no:";
+    cin>>n;
+    int count=0;
+    for(int i=2;i<=n;i++){
+        if(n%i == 0){
+            count++;
+        }
+    }
+     if(count >=2){
+        cout<<"no is not prime";
+     }
+     else{
+        cout<<"no is prime";
+     }
+
+    int n;
+    cin>>n;
+    if(n <= 1) {
+        cout << "Number is not prime";
+        break;
+    }
+    for(int i = 2; i < n; i++) {
+        if(n % i == 0) {
+            cout << "Number is not prime";
+            break;
+        }
+    }
+    cout << "Number is prime";
+
+    // Subtract and the sum of digits of an integer
+
+    int n;
+    cout<<"Enter the number:";
+    cin>>n;
+    int sum=0;
+    int pro=1;
+    while(n>0){
+        int rem = n%10;
+        sum=sum+rem;
+        pro=pro*rem;
+        n=n/10;
+    }
+    cout<<"Final Answer is:"<<(pro-sum);
+
+
+    // count the 1(s) in binary no.
+
+
+    int n;
+    cin>>n;
+    int count=0;
+    while(n!=0){
+        if(n&1){
+            count++;
+        }
+        n=n>>1;
+    }
+    cout<<count;
+
+    // reverse an integer
+
+    int n,rem,rev=0;
+    cin>>n;
+    while(n!=0){
+    rem=n%10;
+    rev=(rem+(rev*10));
+    n=n/10;
+}
+    cout<<rev;
+    return 0;
+}
+

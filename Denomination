@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n,note,x,y,z,w,rem;
+    cout<<"Enter the Rupees:";
+    cin>>n;
+    cout<<"Enter the Note value(100,50,20,1):";
+    cin>>note;
+    switch(note){
+        case 100:
+        x=n/100;
+        cout<<"The Total Note of 100 are:"<<x<<endl;
+        n=n%100;
+
+        case 50:
+        y = n/50;
+        cout<<"the total note of 50 are:"<<y<<endl;
+        n=n%50;
+
+        case 20:
+        z= n/20;
+        cout<<"the total note of 20 are:"<<z<<endl;
+        n=n%20;
+
+        case 1:
+        w=n/1;
+        cout<<"the total note of 1 are:"<<w<<endl;
+        break;
+
+        default:
+        cout<<"Enter the correct note value !!!";
+        
+    }
+    return 0;
+}

@@ -1,0 +1,32 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int a,b;
+    char op;
+    cout<<"enter the value of A:";
+    cin>>a;
+    cout<<"enter the value of B:";
+    cin>>b;
+    cout<<"Enter the operator:";
+    cin>>op;
+    switch (op)
+    {
+    case '+' :
+        cout<<"Sum is:"<<a+b<<endl;
+        break;
+    case '-' :
+        cout<<"Sub is:"<<a-b<<endl;
+        break;
+    case '*' :
+        cout<<"Mul is:"<<a*b<<endl;
+        break;
+    case '/' :
+        cout<<"Div is:"<<a/b<<endl;
+        break;        
+    
+    default:
+        cout<<"Invalid Operator!!";
+        break;
+    }
+    return 0;
+}

@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+int sqrt(int num){
+    int s=0;
+    int e=num-1;
+    long long int ans=0;
+    while(s<=e){
+        long long int mid=((s)+(e-s)/2);
+        if((mid*mid)>num){
+            e=mid-1;
+        }
+        if((mid*mid)<num){
+            ans=mid;
+            s=mid+1;
+        }
+        if((mid*mid) == num){
+            return mid;
+        }
+        mid=(s+(e-s)/2);
+    }
+    return ans;
+}
+int main(){
+    int n;
+    cout<<"Enter a Number:";
+    cin>>n;
+    cout<<"The sqrt is:"<<sqrt(n);
+    return 0;
+}

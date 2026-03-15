@@ -1,0 +1,57 @@
+// insertion sort
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[5]={64,56,34,23,12};
+    for(int i=1;i<5;i++){
+        for(int j=i;j>0;j--){
+        if(arr[j]<arr[j-1]){
+            swap(arr[j],arr[j-1]);
+        }
+    }
+    }
+    for(int i=0;i<5;i++){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
+
+//bubble sort
+
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[5]={65,33,25,14,112};
+    for(int i=0;i<5;i++){
+        for(int j=0;j<5-i;j++){
+        if(arr[j]>arr[j+1]){
+            swap(arr[j],arr[j+1]);
+        }
+        }
+    }
+    for(int i=0;i<5;i++){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
+
+
+// selection sort
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+int main(){
+    int n=5;
+    int arr[5]={64,25,12,22,11};
+    for(int i=0;i<=n-1;i++){
+     int *min = min_element(arr+i,arr+n);
+     if(arr[i]>*min){
+        swap(arr[i],*min);
+        }   
+    }
+ for(int i=0;i<5;i++){
+    cout<<arr[i]<<" ";
+ }  
+    return 0;
+}

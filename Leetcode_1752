@@ -1,0 +1,22 @@
+class Solution {
+public:
+    bool check(vector<int>& nums) {
+        int n = nums.size();
+        int count = 0;
+        
+        for(int i = 0; i < n-1; i++) {
+            if(nums[i] > nums[i+1]) {
+                count++;
+            }
+        }
+        //- Traverse the array and count how many times the order breaks
+
+        // if count=0 -> sorted, count=1 -> rotated and sorted otherwise nothing
+        // also check last and first element
+        if(nums[n-1] > nums[0]) {
+            count++;
+        }
+        
+        return count <= 1;
+    }
+};

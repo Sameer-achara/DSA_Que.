@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0268-missing-number](https://github.com/Sameer-achara/DSA_Que./tree/master/0268-missing-number) |
+| [0485-max-consecutive-ones](https://github.com/Sameer-achara/DSA_Que./tree/master/0485-max-consecutive-ones) |
 ## Hash Table
 |  |
 | ------- |

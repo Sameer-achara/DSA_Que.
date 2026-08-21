@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/Sameer-achara/DSA_Que./tree/master/0035-search-insert-position) |
 | [0268-missing-number](https://github.com/Sameer-achara/DSA_Que./tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/Sameer-achara/DSA_Que./tree/master/0283-move-zeroes) |
 | [0485-max-consecutive-ones](https://github.com/Sameer-achara/DSA_Que./tree/master/0485-max-consecutive-ones) |
@@ -18,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0035-search-insert-position](https://github.com/Sameer-achara/DSA_Que./tree/master/0035-search-insert-position) |
 | [0268-missing-number](https://github.com/Sameer-achara/DSA_Que./tree/master/0268-missing-number) |
 ## Bit Manipulation
 |  |
